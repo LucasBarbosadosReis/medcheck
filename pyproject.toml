@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "medcheck"
+version = "2.0.0"
+description = "Gerenciador de medicamentos para idosos via CLI"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Lucas Barbosa dos Reis", email = "seuemail@exemplo.com" }]
+requires-python = ">=3.9"
+dependencies = ["requests>=2.31"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.4"]
+
+[project.scripts]
+medcheck = "src.app:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+verbosity = 2
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]

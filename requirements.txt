@@ -1,0 +1,4 @@
+# Dependências de desenvolvimento e teste
+pytest>=7.4
+ruff>=0.4
+requests>=2.31
