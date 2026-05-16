@@ -103,5 +103,5 @@ medcheck/
 
 ##  Autor
 
-**Seu Nome Completo**  
+**Lucas Barbosa dos Reis**  
 Repositório: [https://github.com/LucasBarbosadosReis/medcheck](https://github.com/LucasBarbosadosReis/medcheck)
